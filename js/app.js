@@ -129,7 +129,8 @@ function checkAlphabet(char) {
 
 // // Title:submitted
 // namayeshe gifha bad az submit shodane form
-function submitted() {
+function submitted(e) {
+  e.preventDefault();
   loader.src = "img/spinner.gif";
   loader.style.display = "block";
   const timer = setTimeout(
